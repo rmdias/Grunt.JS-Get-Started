@@ -17,7 +17,7 @@ Pré-requisitos: Você precisa ter instalado?
 
 ## Instalando o Grunt
 
-1. É muito fácil, se você já tinha o Grunt instalado, desinstaler pelo Terminal:
+1. É muito fácil, se você já tinha o Grunt instalado, desinstale pelo Terminal:
   	
 		npm uninstall -g grunt
 
