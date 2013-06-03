@@ -5,10 +5,7 @@ Grunt.JS    Get-Started
 
 ## Primeiros passos
 
-Pré-requisitos: Você precisa ter instalado? 
- <br>
- <br>
- -> [Git](http://git-scm.com/downloads)
+Pré-requisitos: Você precisa ter instalado
  <br>
  -> [NodeJS](http://nodejs.org/download/)
  <br>
