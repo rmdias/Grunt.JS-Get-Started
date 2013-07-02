@@ -35,8 +35,8 @@
                         collapseWhitespace: true
                     },
                     files: {
-                        'visao/default/index.html': 'visao/default/assets/_html/index.html',
-                        'visao/default/controle.html': 'visao/default/assets/_html/controle.html'
+                        'visao/default/index.html': [ 'visao/default/assets/_html/index.html' ],
+                        'visao/default/controle.html': [ 'visao/default/assets/_html/controle.html' ]
                     }
                 }
             }, // htmlmin
@@ -48,7 +48,7 @@
                         'visao/default/assets/_css/**/*',
                         'visao/default/assets/_html/**/*'
                     ],
-                    tasks : [ 'uglify', 'htmlmin', 'cssmin']
+                    tasks : [ 'uglify', 'cssmin', 'htmlmin']
                 }
             }// watch
         });
