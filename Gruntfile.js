@@ -35,8 +35,8 @@
                         collapseWhitespace: true
                     },
                     files: {
-                        'visao/default/index.html': 'visao/default/assets/_html/index.html',
-                        'visao/default/controle.html': 'visao/default/assets/_html/controle.html'
+                        'visao/default/index.html': [ 'visao/default/assets/_html/index.html' ],
+                        'visao/default/controle.html': [ 'visao/default/assets/_html/controle.html' ]
                     }
                 }
             }, // htmlmin
@@ -48,12 +48,12 @@
                         'visao/default/assets/_css/**/*',
                         'visao/default/assets/_html/**/*'
                     ],
-                    tasks : [ 'uglify', 'htmlmin', 'cssmin']
+                    tasks : [ 'uglify', 'cssmin', 'htmlmin']
                 }
             }// watch
         });
 
- 
+
         // Plugins do Grunt
         grunt.loadNpmTasks('grunt-contrib-uglify');
         grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -61,11 +61,8 @@
         grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-
-
         // Tarefas que serão executadas
         grunt.registerTask( 'default', [ 'uglify', 'cssmin', 'htmlmin' ] );
-
 
 
         // Tarefa para Watch
