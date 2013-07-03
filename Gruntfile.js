@@ -61,11 +61,8 @@
         grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-
-
         // Tarefas que serão executadas
         grunt.registerTask( 'default', [ 'uglify', 'cssmin', 'htmlmin' ] );
-
 
 
         // Tarefa para Watch
